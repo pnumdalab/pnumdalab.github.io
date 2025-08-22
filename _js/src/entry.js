@@ -34,7 +34,7 @@ if (hasFeatures(BASELINE)) {
   if (!window._noNavbar) import(/* webpackChunkName: "navbar" */ './navbar');
   // if (!window._noSearch) import(/* webpackChunkName: "search" */ './pro/search');
 
-  if (hasFeatures(DARK_MODE_FEATURES)) {
+  if (hasFeatures(DARK_MODE_FEATURES) && !window._noDarkMode) {
     // import(/* webpackMode: "eager" */ './pro/cookies-banner');
     import(/* webpackMode: "eager" */ './pro/dark-mode');
   }

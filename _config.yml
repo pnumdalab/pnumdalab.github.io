@@ -1,6 +1,6 @@
 lang:                  en
-title:                 Hydejack
-copyright:             © 2024. All rights reserved.
+title:                 PNU MDA LAB
+copyright:             © 2025. All rights reserved.
 
 accent_image:          /assets/img/sidebar-bg.jpg
 accent_color:          rgb(79,177,186)
@@ -35,7 +35,7 @@ hydejack:
 
   dark_mode:
     always:            false
-    dynamic:           true
+    dynamic:           false
     sunrise:           6
     sunset:            18
     icon:              true
@@ -70,7 +70,21 @@ compress_html:
 sass:
   style:               compressed
 
+menu:
+  - title: About
+    url: /about/
+  - title: Professor
+    url: /professor/
+  - title: Members
+    url: /members/
+  - title: Publications
+    url: /publications/
+  - title: Projects
+    url: /projects/
+  - title: Posts
+    url: /posts/
+
+
 # Plugins
 plugins:
   - jekyll-include-cache
-

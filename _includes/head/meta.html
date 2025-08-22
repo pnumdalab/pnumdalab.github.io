@@ -1,3 +1,42 @@
+<script>
+  // 강력한 라이트모드 강제 설정
+  (function() {
+    // localStorage와 sessionStorage 모두 라이트모드로 설정
+    localStorage.setItem('darkMode', 'false');
+    sessionStorage.setItem('darkMode', 'false');
+    
+    // HTML 요소에서 다크모드 관련 클래스 제거
+    document.documentElement.classList.remove('dark-mode');
+    document.documentElement.classList.add('light-mode');
+    
+    // body가 로드되면 추가 확인
+    document.addEventListener('DOMContentLoaded', function() {
+      document.documentElement.classList.remove('dark-mode');
+      document.body.classList.remove('dark-mode');
+    });
+  })();
+</script>
+
+<style>
+  /* 강제 라이트모드 CSS */
+  :root {
+    color-scheme: light !important;
+  }
+  
+  html {
+    --body-bg: #fff !important;
+    --body-color: #333 !important;
+    --border-color: #e5e5e5 !important;
+    --gray: #666 !important;
+    --gray-bg: #f8f9fa !important;
+  }
+  
+  html:not(.dark-mode) {
+    background-color: #fff !important;
+    color: #333 !important;
+  }
+</style>
+
 {% if page.noindex or page.no_index or page.sitemap == false %}
   <meta name="robots" content="noindex">
 {% endif %}

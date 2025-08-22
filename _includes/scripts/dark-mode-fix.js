@@ -1,10 +1,15 @@
 !function (window, document) {
   var LM = 'light-mode';
   var DM = 'dark-mode';
-  var h = new Date().getHours();
-  if ('matchMedia' in window && window.matchMedia('(prefers-color-scheme)')) return;
-  var m = h <= window._sunrise || h >= window._sunset  ? DM : LM; 
-  var n = m === DM ? LM : DM;
-  document.body.classList.add(m);
-  document.body.classList.remove(n);
+  
+  // 사용자 설정이 있는 경우 그것을 우선
+  var userPreference = localStorage.getItem('darkMode');
+  if (userPreference === 'true') {
+    document.body.classList.add(DM);
+    document.body.classList.remove(LM);
+  } else {
+    // 기본값은 항상 라이트모드
+    document.body.classList.add(LM);
+    document.body.classList.remove(DM);
+  }
 }(window, document);

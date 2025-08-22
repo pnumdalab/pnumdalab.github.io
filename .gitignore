@@ -1,0 +1,4 @@
+#로컬 테스트용 빌드 파일 커밋 제외
+Gemfile
+Gemfile.lock
+_site/
