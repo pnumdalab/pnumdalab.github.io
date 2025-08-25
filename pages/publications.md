@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Publications
+permalink: /publications/
 ---
 
 # 연구 논문

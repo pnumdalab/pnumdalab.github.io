@@ -1,10 +1,6 @@
-
-
-# Hydejack
-
 A boutique Jekyll theme for hackers, nerds, and academics.  
 
-
+asdfasdfa
 
 
 [![Screenshot](https://hydejack.com/assets/img/blog/hydejack-9.jpg)][welcome]

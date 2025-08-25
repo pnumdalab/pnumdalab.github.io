@@ -125,4 +125,4 @@ permalink: /professor/
 - **Email**: [kyRyu@pusan.ac.kr](mailto:kyRyu@pusan.ac.kr)
 - **Office**: Room 2204, 2nd Engineering Building, Pusan National University
 - **Phone**: +82-51-510-2423
-- **Lab Website**: [MDA Lab](http://mdalab.pusan.ac.kr)
+- **Lab Website**: [MDA Lab](https://pnumdalab.github.io/)

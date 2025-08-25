@@ -2,6 +2,7 @@
 layout: page
 title: Projects
 description: 연구실 진행 프로젝트
+permalink: /projects/
 ---
 
 # 연구 프로젝트
